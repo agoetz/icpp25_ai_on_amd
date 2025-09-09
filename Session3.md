@@ -69,7 +69,7 @@ make -j4
 ```
 Once the builds are done, copy over the rccl submit scripts from this repository and modify them to use your build. Note that the original RCCL install should still point to the train101 location (that build takes hours!).
 ```
-sbstch --res=ICPP2025Day1 rccl-test-1node-normal.sb
+sbatch --res=ICPP2025Day1 rccl-test-1node-normal.sb
 sbatch --res=ICPP2025Day1 rccl-test-1node-verbose.sb
 ```
 The verbose run will give many details and we can inspect the output to check the parameters logged.
